@@ -1,0 +1,4 @@
+fastapi>=0.95
+uvicorn[standard]>=0.22
+qrcode>=7.3
+pillow>=10.0

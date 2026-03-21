@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-gradient-xy {
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+  }
+
+  .animate-float {
+    animation: float 12s ease-in-out infinite;
+  }
+
+  @keyframes gradientMove {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(8deg); }
+  }
+}
