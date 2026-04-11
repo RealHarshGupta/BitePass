@@ -18,7 +18,7 @@ const autoGenerateQrCodes = async (req, res) => {
     }
 
     // 2️⃣ FastAPI QR generator URL
-    const QR_BATCH_URL = "http://localhost:8000/generate_qr_batch";
+    const QR_BATCH_URL = "http://13.48.145.27:8000/generate_qr_batch";
 
     // 3️⃣ Prepare payload
     const payload = {
